@@ -1,0 +1,6 @@
+@product_project_for_tests_HostAddress = http://localhost:5091
+
+GET {{product_project_for_tests_HostAddress}}/product-project-for-tests/
+Accept: application/json
+
+###
