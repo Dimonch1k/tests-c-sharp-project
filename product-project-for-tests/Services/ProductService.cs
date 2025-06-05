@@ -9,28 +9,28 @@ public class ProductService
 {
   private readonly AppDbContext _context;
 
-  public ProductService( AppDbContext context )
+  public ProductService(AppDbContext context)
   {
     _context = context;
   }
 
-  public async Task<List<ProductDto>> GetAllAsync( )
+  public async Task<List<ProductDto>> GetAllAsync()
   {
     return await _context.Products
-        .Select( p => new ProductDto
-        {
-          Id = p.Id,
-          Name = p.Name,
-          Price = p.Price,
-          InStock = p.InStock
-        } ).ToListAsync();
+      .Select(p => new ProductDto
+      {
+        Id = p.Id,
+        Name = p.Name,
+        Price = p.Price,
+        InStock = p.InStock
+      }).ToListAsync();
   }
 
-  public async Task<ProductDto?> GetByIdAsync( int id )
+  public async Task<ProductDto?> GetByIdAsync(int id)
   {
-    Product? product = await _context.Products.FindAsync( id );
-    
-    if ( product == null )
+    Product? product = await _context.Products.FindAsync(id);
+
+    if (product == null)
     {
       return null;
     }
@@ -44,7 +44,7 @@ public class ProductService
     };
   }
 
-  public async Task<ProductDto> CreateAsync( CreateProductDto dto )
+  public async Task<ProductDto> CreateAsync(CreateProductDto dto)
   {
     var product = new Product
     {
@@ -53,7 +53,7 @@ public class ProductService
       InStock = dto.InStock
     };
 
-    _context.Products.Add( product );
+    _context.Products.Add(product);
     await _context.SaveChangesAsync();
 
     return new ProductDto
@@ -65,26 +65,26 @@ public class ProductService
     };
   }
 
-  public async Task<bool> UpdateAsync( int id, UpdateProductDto dto )
+  public async Task<bool> UpdateAsync(int id, UpdateProductDto dto)
   {
-    Product? product = await _context.Products.FindAsync( id );
+    Product? product = await _context.Products.FindAsync(id);
 
-    if ( product == null )
+    if (product == null)
     {
       return false;
     }
 
-    if ( dto.Name != null )
+    if (dto.Name != null)
     {
       product.Name = dto.Name;
     }
 
-    if ( dto.Price.HasValue )
+    if (dto.Price.HasValue)
     {
       product.Price = dto.Price.Value;
     }
 
-    if ( dto.InStock.HasValue )
+    if (dto.InStock.HasValue)
     {
       product.InStock = dto.InStock.Value;
     }
@@ -93,15 +93,15 @@ public class ProductService
     return true;
   }
 
-  public async Task<bool> DeleteAsync( int id )
+  public async Task<bool> DeleteAsync(int id)
   {
-    Product? product = await _context.Products.FindAsync( id );
-    if ( product == null )
+    Product? product = await _context.Products.FindAsync(id);
+    if (product == null)
     {
       return false;
     }
 
-    _context.Products.Remove( product );
+    _context.Products.Remove(product);
 
     await _context.SaveChangesAsync();
 

@@ -6,7 +6,7 @@ public class Product
 
   public string Name { get; set; } = null!;
 
-  public decimal Price { get; set; }
+  public decimal Price { get; set; } = 0;
 
-  public bool InStock { get; set; }
+  public bool InStock { get; set; } = false;
 }
