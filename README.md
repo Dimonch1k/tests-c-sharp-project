@@ -2,11 +2,11 @@
 
 ## Run Docker Container
 
-docker run --name test-asp-net-db \                                       ─╯
-  -e POSTGRES_USER=postgres \
-  -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=test-asp-net-db \
-  -p 5433:5432 \
+docker run --name test-asp-net-db \\
+  -e POSTGRES_USER=postgres \\
+  -e POSTGRES_PASSWORD=postgres \\
+  -e POSTGRES_DB=test-asp-net-db \\
+  -p 5433:5432 \\
   -d postgres
 
 ## appsettings.json
