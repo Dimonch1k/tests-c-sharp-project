@@ -37,7 +37,7 @@ public class ProductController : ControllerBase
   public async Task<ActionResult<ProductDto>> Create(CreateProductDto dto)
   {
     ProductDto product = await _service.CreateAsync(dto);
-    return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+    return CreatedAtAction(nameof(GetById), new { id = product.Id }, product );
   }
 
   [HttpPut("{id}")]

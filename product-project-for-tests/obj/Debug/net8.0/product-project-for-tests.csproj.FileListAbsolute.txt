@@ -71,7 +71,6 @@ C:/Users/dmytro/Desktop/Git/Dimonch1kRepos/tests-c-sharp-project/product-project
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.product-project-for-tests.props
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/obj/Debug/net8.0/staticwebassets.pack.json
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/obj/Debug/net8.0/scopedcss/bundle/product-project-for-tests.styles.css
-/home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/obj/Debug/net8.0/product-.74DAD1CA.Up2Date
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/obj/Debug/net8.0/product-project-for-tests.dll
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/obj/Debug/net8.0/refint/product-project-for-tests.dll
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/obj/Debug/net8.0/product-project-for-tests.pdb
@@ -139,3 +138,4 @@ C:/Users/dmytro/Desktop/Git/Dimonch1kRepos/tests-c-sharp-project/product-project
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/dmytro/Desktop/Git/Dimonch1k/tests-c-sharp-project/product-project-for-tests/obj/Debug/net8.0/product-project-for-tests.csproj.CopyComplete
